@@ -11,6 +11,7 @@
       It also sets a default timeout value (which may be overidden).
     pre-run: playbooks/base/pre.yaml
     post-run: playbooks/base/post.yaml
+    cleanup-run: playbooks/base/cleanup.yaml
     roles:
       - zuul: opendev.org/zuul/zuul-jobs
     timeout: 1800
